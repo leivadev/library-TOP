@@ -85,3 +85,21 @@ input[type="checkbox"] {
     font-weight: 500;
     font-style: italic;
 }
+
+footer {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+footer a,
+footer p {
+    color: #fff;
+}
+
+footer i {
+    padding-right: 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
