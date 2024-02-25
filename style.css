@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 5rem auto 5rem;
+    height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fcd7ad;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #a57548;
+    color: #fff;
+    box-shadow: 0 0 6px 4px #f6c28b;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-right: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-radius: 0.5rem;
+}
+
+input[type="checkbox"] {
+    padding: 0.5rem 1rem;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+
+    border: 2px solid #333;
+    border-radius: 1rem;
+    background-color: #fff7ed;
+    opacity: 0.9;
+    background-image: linear-gradient(#ffebd4 2px, transparent 2px), linear-gradient(90deg, #ffebd4 2px, transparent 2px), linear-gradient(#ffebd4 1px, transparent 1px), linear-gradient(90deg, #ffebd4 1px, #fff7ed 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+
+    box-shadow: 0 0 6px 4px #f6c28b;
+}
+
+.book h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+}
