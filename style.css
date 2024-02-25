@@ -53,8 +53,19 @@ input {
     border-radius: 0.5rem;
 }
 
-input[type="checkbox"] {
-    padding: 0.5rem 1rem;
+button[type="submit"] {
+    background-color: #e7ff91;
+    color: #333;
+    font-weight: 700;
+    border: 2px solid #333;
+    padding: 0.5rem 2rem;
+    width: min-content;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #d4ff00;
 }
 
 .book-list {
